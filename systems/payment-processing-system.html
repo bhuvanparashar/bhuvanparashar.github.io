@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SabPaisa Experience | Bhuvan Parashar</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Payment Processing System (Fintech)</h1>
+
+    <hr>
+
+    <h2>1. System Flow</h2>
+    <p>
+        Client payment request → request validation → transaction creation →
+        bank integration / verification → database persistence → status update → response.
+    </p>
+
+
+    <h3>Flow Breakdown</h3>
+        <ul>
+            <li>Client sends payment request (UPI / QR / payment reference).</li>
+            <li>Request validation (format validation, checksum verification, security checks).</li>
+            <li>Transaction record creation with pending status.</li>
+            <li>External payment verification / processing.</li>
+            <li>Database update with final transaction state.</li>
+            <li>Response returned with transaction status.</li>
+        </ul>
+
+    <hr>
+
+    <h2>2. Data Model</h2>
+
+    <h3>Core Entities</h3>
+    <ul>
+        <li>Transaction</li>
+        <li>Merchant</li>
+        <li>Payment Record</li>
+    </ul>
+
+    <h3>Relationships</h3>
+    <p>Explain entity relationships and data lifecycle.</p>
+
+    <h3>Query Patterns</h3>
+    <ul>
+        <li>Transaction lookup</li>
+        <li>Status updates</li>
+        <li>Reporting queries</li>
+    </ul>
+
+    <hr>
+
+    <h2>3. Core Logic & Processing</h2>
+
+    <ul>
+        <li>Validation strategy</li>
+        <li>Concurrency handling</li>
+        <li>Exception handling approach</li>
+        <li>Retry / fallback logic</li>
+    </ul>
+
+    <hr>
+
+    <h2>4. Infrastructure & Deployment</h2>
+
+    <ul>
+        <li>Service deployment model</li>
+        <li>Database connectivity</li>
+        <li>Scheduling / batch processing</li>
+        <li>Monitoring considerations</li>
+    </ul>
+
+    <hr>
+
+    <h2>5. Design Tradeoffs</h2>
+
+    <ul>
+        <li>Design choice → benefit → tradeoff</li>
+    </ul>
+
+</div>
+
+</body>
+
+</html>
