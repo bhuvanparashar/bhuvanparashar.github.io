@@ -4,26 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Obopay Experience | Bhuvan Parashar</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
+
 <div class="container">
 
-    <h1>Payment Processing System (Fintech)</h1>
+    <h1>Reward & Transaction Processing System</h1>
 
     <hr>
 
     <h2>1. System Flow</h2>
-    <p>Request → validation → processing → storage → response.</p>
+    <p>Input → validation → reward computation → transaction update → storage → response.</p>
 
     <h3>Flow Breakdown</h3>
     <ul>
-        <li>Client request handling</li>
-        <li>Input validation & security checks</li>
-        <li>Transaction processing</li>
-        <li>Persistence layer interaction</li>
-        <li>Response generation</li>
+        <li>Transaction ingestion (API / file input)</li>
+        <li>Validation & rule checks</li>
+        <li>Reward calculation / processing</li>
+        <li>Transaction persistence</li>
+        <li>Response / status update</li>
     </ul>
 
     <hr>
@@ -32,19 +33,19 @@
 
     <h3>Core Entities</h3>
     <ul>
+        <li>User Account</li>
+        <li>Reward Record</li>
         <li>Transaction</li>
-        <li>Merchant</li>
-        <li>Payment Record</li>
     </ul>
 
     <h3>Relationships</h3>
-    <p>Explain entity relationships and data lifecycle.</p>
+    <p>Explain entity relationships and reward lifecycle.</p>
 
     <h3>Query Patterns</h3>
     <ul>
-        <li>Transaction lookup</li>
-        <li>Status updates</li>
-        <li>Reporting queries</li>
+        <li>Reward lookup</li>
+        <li>Transaction update queries</li>
+        <li>Aggregation queries</li>
     </ul>
 
     <hr>
@@ -52,10 +53,10 @@
     <h2>3. Core Logic & Processing</h2>
 
     <ul>
-        <li>Validation strategy</li>
+        <li>Reward calculation strategy</li>
+        <li>Validation pipeline</li>
         <li>Concurrency handling</li>
-        <li>Exception handling approach</li>
-        <li>Retry / fallback logic</li>
+        <li>Exception handling</li>
     </ul>
 
     <hr>
@@ -63,10 +64,10 @@
     <h2>4. Infrastructure & Deployment</h2>
 
     <ul>
-        <li>Service deployment model</li>
-        <li>Database connectivity</li>
-        <li>Scheduling / batch processing</li>
-        <li>Monitoring considerations</li>
+        <li>Batch / file processing</li>
+        <li>Service deployment</li>
+        <li>Database interaction</li>
+        <li>Monitoring</li>
     </ul>
 
     <hr>
@@ -78,7 +79,6 @@
     </ul>
 
 </div>
-
 
 </body>
 
