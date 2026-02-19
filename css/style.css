@@ -44,3 +44,8 @@ nav a:hover {
     margin-top: 0;
 }
 
+/* homepage background */
+.home-background {
+    background: url("../assets/home-bakground.png") no-repeat center center fixed;
+    background-size: cover;
+}
