@@ -32,20 +32,76 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.project {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.project h3 {
-    margin-top: 0;
-}
 
 /* homepage background */
 .home-background {
     background: url("../assets/home-bakground.png") no-repeat center center fixed;
     background-size: cover;
+}
+
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* glass overlay for readability */
+.container {
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+h1, h2 {
+    letter-spacing: 1px;
+}
+
+h1 {
+    text-shadow: 0 0 8px rgba(0,150,255,0.3);
+}
+
+/* smooth animation */
+body {
+    transition: all 0.3s ease;
+}
+
+.project-carousel {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.project-card {
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    animation: rotateCards 15s linear infinite;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotateCards {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-400px); }
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skills-table th, .skills-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.skills-table tr:hover {
+    background: #f1f7ff;
+    transform: scale(1.01);
+    transition: 0.2s;
 }

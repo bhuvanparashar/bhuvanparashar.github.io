@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Bhuvan Parashar | Backend Engineer</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -23,115 +25,64 @@
         </p>
     </section>
 
-    <section id="projects">
+    <div class="project-carousel">
 
-        <h2>Projects</h2>
-
-        <div class="project">
-
+        <div class="project-card">
             <h3>UPI QR Payment System</h3>
-            <p>
-                Built UPI QR application supporting Intent and Dynamic QR flows with
-                transaction processing and real-time payment handling.
-            </p>
-
-            <p><strong>Tech:</strong> Java, Spring Boot, REST APIs, Payment Processing</p>
-
+            <p>Real-time payment workflow with transaction validation.</p>
         </div>
 
-        <div class="project">
-
-            <h3>Virtual Account Number (VAN) Microservices</h3>
-            <p>
-                Refactored monolithic challan system into microservices-based VAN system
-                enabling offline payment collection and multi-payment support.
-            </p>
-
-            <p><strong>Tech:</strong> Java, Microservices, Database Design</p>
-
+        <div class="project-card">
+            <h3>VAN Microservices</h3>
+            <p>Microservices architecture for offline payment collection.</p>
         </div>
 
-        <div class="project">
-
+        <div class="project-card">
             <h3>Bank Integration Platform</h3>
-            <p>
-                Integrated multiple banking systems supporting UPI, wallets, net banking,
-                and BNPL flows with secure verification and fallback handling.
-            </p>
-
-            <p><strong>Tech:</strong> REST APIs, Encryption, Transaction Processing</p>
-
+            <p>Multi-bank secure transaction integration.</p>
         </div>
 
-        <div class="project">
-
-            <h3>Reward & Loyalty Processing System</h3>
-            <p>
-                Developed loyalty points, coupon redemption, and reward calculation
-                modules for transaction-based systems.
-            </p>
-
-            <p><strong>Tech:</strong> Java, Backend Processing, Scheduling</p>
-
+        <div class="project-card">
+            <h3>Reward System</h3>
+            <p>Loyalty and coupon processing engine.</p>
         </div>
 
-        <div class="project">
-
-            <h3>Credit Card & Wallet Transaction System</h3>
-            <p>
-                Implemented transaction workflows including issuance, linking, validation,
-                and reversal handling.
-            </p>
-
-            <p><strong>Tech:</strong> Financial Systems, Transaction Management</p>
-
-        </div>
-
-    </section>
+    </div>
 
     <section id="skills">
 
         <h2>Skills</h2>
 
-        <h3>Backend</h3>
-        <ul>
-            <li>Java (JSE, JEE)</li>
-            <li>Spring Boot</li>
-            <li>Hibernate, JPA</li>
-            <li>REST APIs, SOAP</li>
-            <li>JSON, XML</li>
-        </ul>
+        <table class="skills-table">
+            <tr>
+                <th>Category</th>
+                <th>Technologies</th>
+            </tr>
 
-        <h3>Architecture & Systems</h3>
-        <ul>
-            <li>Microservices Architecture</li>
-            <li>Monolithic Systems</li>
-            <li>Proxy Design Pattern</li>
-            <li>Security Interceptors</li>
-        </ul>
+            <tr>
+                <td>Backend</td>
+                <td>Java, Spring Boot, Hibernate, REST, SOAP</td>
+            </tr>
 
-        <h3>Database</h3>
-        <ul>
-            <li>MySQL</li>
-            <li>Oracle DB</li>
-            <li>SQL Tuning</li>
-        </ul>
+            <tr>
+                <td>Database</td>
+                <td>MySQL, Oracle DB, SQL Tuning</td>
+            </tr>
 
-        <h3>Cloud & Tools</h3>
-        <ul>
-            <li>Docker</li>
-            <li>Kubernetes</li>
-            <li>Kafka</li>
-            <li>Git</li>
-            <li>Maven</li>
-            <li>CI/CD</li>
-            <li>AWS</li>
-            <li>Linux</li>
-            <li>Tomcat</li>
-            <li>Oracle WebLogic</li>
-        </ul>
+            <tr>
+                <td>Architecture</td>
+                <td>Microservices, Monolith, Security Interceptors</td>
+            </tr>
+
+            <tr>
+                <td>Cloud & Tools</td>
+                <td>Docker, Kubernetes, Kafka, AWS, CI/CD</td>
+            </tr>
+
+        </table>
 
     </section>
+
 
     <section id="architecture">
         <h2>Architecture & System Design</h2>
@@ -165,6 +116,9 @@
 </div>
 
 <script src="js/main.js"></script>
+<canvas id="bg"></canvas>
+<script src="js/particles.js"></script>
+
 
 </body>
 
