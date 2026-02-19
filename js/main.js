@@ -6,5 +6,10 @@ function loadComponent(path, elementId) {
         });
 }
 
-loadComponent("components/header.html", "header");
-loadComponent("components/footer.html", "footer");
+/* detect folder depth */
+const basePath = window.location.pathname.includes("/systems/")
+    ? "../"
+    : "";
+
+loadComponent(basePath + "components/header.html", "header");
+loadComponent(basePath + "components/footer.html", "footer");
